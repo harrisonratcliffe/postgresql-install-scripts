@@ -1,4 +1,4 @@
-# PostgreSQL Installation and Setup
+# PostgreSQL Linux Installation Scripts
 
 This repository contains:
 
