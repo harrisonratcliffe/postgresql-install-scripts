@@ -22,16 +22,20 @@ This repository contains:
 
 ### CentOS/AlmaLinux
 
-1. Make the CentOS install script executable:
+1. Download the script from GitHub:
    ```bash
-   chmod +x install-pg-centos.sh
+   wget https://raw.githubusercontent.com/harrisonratcliffe/postgresql-install-scripts/refs/heads/main/install-postgres-centos.sh
    ```
-2. Run the script as root (it will prompt for PostgreSQL major version, e.g., 13, 14, 15):
+3. Make the CentOS install script executable:
    ```bash
-   sudo ./install-pg-centos.sh
+   chmod +x install-postgres-centos.sh
+   ```
+4. Run the script as root (it will prompt for PostgreSQL major version, e.g., 13, 14, 15):
+   ```bash
+   sudo ./install-postgres-centos.sh
    ```
 
-The `install-pg-centos.sh` script performs:
+The `install-postgres-centos.sh` script performs:
 
 - Adds the PGDG YUM repository.
 - Disables the built-in PostgreSQL module.
